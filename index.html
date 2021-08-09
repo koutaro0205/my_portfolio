@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <title>My_Portfolio</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Works">Works</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="burger-btn" aria-label="メニュー" type="button">
+      <span class="bar bar_top"></span>
+      <span class="bar bar_mid"></span>
+      <span class="bar bar_bottom"></span>
+    </button>
+  </header>
+  <div class="main-img">
+    <img src="img/sixteen-miles-out-GpCodheuWn0-unsplash.jpg" alt="メイン画像">
+    <h1>My Portfolio</h1>
+  </div>
+
+  <main>
+    <section class="about" id="About"> 
+      <h1 class="section-title" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom">About Me</h1>
+      <div class="about-container">
+        <div class="my-img" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+          <img src="img/my-img.png" alt="自分の画像">
+        </div>
+        <div class="about-content" data-aos="fade-up">
+          <div class="profile">
+            <h2>My Profile</h2>
+            <ul>
+              <li>名前：井上倖太朗</li>
+              <li>年齢：2001年生まれ20歳</li>
+              <li>出身地：東京都府中市</li>
+              <li>学歴：関西学院大学 法学部政治学科（在籍中）</li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h2>Concept</h2>
+            <p>
+              デザインをもとに、クライアント様のご要望に合わせたコーディングを行います。<br>
+              丁寧な対応、納期遵守を心掛けております。
+            </p>
+          </div>
+        </div>
+      </div>    
+    </section>
+    <section class="skills" id="Skills">
+      <h1 class="section-title" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom">Skills</h1>
+      <div class="inner">
+        <div class="skills-content" data-aos="fade-up">
+          <div class="skills-img">
+            <img src="img/xps-dpbXgTh0Lac-unsplash.jpg" alt="イメージ画像">
+          </div>
+          <div class="skills-text">
+            <h2>HTML/CSS</h2>
+            <div class="skill-logo-img">
+              <img src="img/file_type_html_icon_130541.png" alt="ロゴ画像">
+              <img src="img/file_type_css_icon_130661.png" alt="ロゴ画像">
+            </div>
+            <p>デザインカンプをもとに、レスポンシブ対応やサイトの一部修正など、クライアント様のイメージやご要望を最大限考慮したコーディングを行います。</p>
+          </div>
+        </div>
+        <div class="skills-content" data-aos="fade-up">
+          <div class="skills-img">
+            <img src="img/xps-TxXuh_hAFd8-unsplash.jpg" alt="イメージ画像">
+          </div>
+          <div class="skills-text">
+            <h2>Javascript/(Jquery)</h2>
+            <div class="skill-logo-img">
+              <img src="img/javascript_icon_130900.png" alt="ロゴ画像">
+              <img src="img/jquery_original_wordmark_logo_icon_146447.png" alt="ロゴ画像">
+            </div>
+            <p>HTML/CSSのコーディングに加え、主にJqueryを中心としたアニメーションを実装することで、より洗練された動きのあるwebサイトを構築します。</p>
+          </div>
+        </div>
+        <div class="price">
+          <h2>【料金目安】</h2>
+          <ul>
+            <li>サイトの一部修正：8000～（１ｐ）</li>
+            <li>静的なホームページ制作（LP）：18000～（１ｐ）</li>
+            <li>※作業目安期間2～3日/1p</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="works" id="Works">
+      <h1 class="section-title" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom">Works</h1>
+      <div class="works-container">
+        <div class="works-item">
+          <a href="" data-aos="zoom-in-down"><img src="img/my_portfolio.png" alt="キャプチャ画像"></a>
+          <p>
+            ポートフォリオサイト
+          </p>
+        </div>
+        <div class="works-item">
+          <a href="" data-aos="zoom-in-down"><img src="img/screenshot.png" alt="キャプチャ画像"></a>
+          <p>
+            架空の温泉旅館サイト
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <h1 data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom">Contact</h1>
+    <div class="contact" id="Contact">
+      <a href="mailto:koutaro130205@icloud.com" data-aos="zoom-in-down"><img src="img/icon_112181_64.png" alt="メールロゴ"></a>
+      <p>⇧<br>Click!<br>ご依頼はこちらのメールよりお願い致します</p>
+    </div>
+    <div class="copyright">
+      Copyright © 2021 Koutaro Inoue's Protfolio All Rights Reserved.
+    </div>
+  </footer>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html> 
