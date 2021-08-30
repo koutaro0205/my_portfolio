@@ -8,7 +8,7 @@ header{
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 20;
   background-color: #fff;
   opacity: 0.8;
 }
@@ -32,25 +32,34 @@ header nav ul li a:hover{
 }
 .main-img{
   width: 100%;
-  height: 800px;
   position: relative;
 }
 .main-img img{
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  vertical-align: bottom;
   object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
 }
 .main-img h1{
   font-size: 60px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
 }
 .about{
   background-image: url(../img/leon-64201tp25Bw-unsplash.jpg);
   background-position: center;
   background-size: cover;
+  margin-top: 100vh;
 }
 .about .section-title{
   padding-top: 50px;
@@ -113,10 +122,10 @@ header nav ul li a:hover{
 .skills .inner .skills-content{
   display: flex;
 }
-.skills .inner .skills-content:nth-child(2){
+.skills .inner .skills-content:nth-child(even){
   display: flex;
   flex-direction: row-reverse;
-  margin-top: 30px;
+  margin: 50px 0;
 }
 .skills .inner .skills-content .skills-img{
   width: 50%;
@@ -214,16 +223,18 @@ header nav ul li a:hover{
   color: #fff;
 }
 footer{
-  background-image: url(../img/sixteen-miles-out-GpCodheuWn0-unsplash.jpg);
+  /* background-image: url(../img/sixteen-miles-out-GpCodheuWn0-unsplash.jpg); */
   background-position: bottom;
   background-size: cover;
+  background-color: #fff;
+  opacity: 0.8;
 }
 footer h1{
   font-size: 36px;
   padding-top: 80px;
   margin-bottom: 50px;
   text-align: center;
-  color: #fff;
+  color: black;
 }
 footer .contact{
   text-align: center;
@@ -237,7 +248,7 @@ footer .contact a img:hover{
 }
 footer .contact p{
   font-size: 22px;
-  color: #fff;
+  color: black;
   line-height: 1.7;
   /* background-color: rgb(235, 223, 223, 0.8); */
 }
